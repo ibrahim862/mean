@@ -1,11 +1,30 @@
 <mat-card>
-<mat-form-field>
-  <textarea matInput rows="10" [(ngModel)]="enteredValue"></textarea>
-</mat-form-field>
+  <form>
+    <mat-form-field>
+      <textarea matInput rows="10" [(ngModel)]="enteredValue"></textarea>
+    </mat-form-field>
+    <mat-form-field>
+        <input autocomplete="password" matInput type="password" placeholder="password" >
+    <!--
+      doNotAutoComplete
+      autocomplete="off"
+autocomplete=""
+autocomplete="chrome-off
+-->
+    </mat-form-field>
+
+    <mat-form-field>
+      <input autocomplete="phone" matInput type="phone" placeholder="phone" >
+    </mat-form-field>
+  </form>
+
+
 <button
 mat-raised-button
 color="primary"
-(click)="oAdd()">submit</button>
+(click)="oAdd()">submit</button> <br><br>
+
 </mat-card>
 <hr>
+
 
